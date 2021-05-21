@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style> 
+body {
+  background-image: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.3)), url("https://images.squarespace-cdn.com/content/v1/55f32473e4b029b54a7228d2/1463615464165-21TSD9HGKBKMOQEWHQ7J/ke17ZwdGBToddI8pDm48kNVKaGh90e7px4cePAbZfJkUqsxRUqqbr1mOJYKfIPR7UkZTRBG6NkxChUQUS5aT-N1zvyjCMp4cr56H1as-UxdCRW4BPu10St3TBAUQYVKcMdXBcIzuK3u3cCVrFprFKYvVP-RVWEzWp1YEHmfa5vdE9hjkQRr9Ti7xR8-czToa/Rent+Rated+R+Movies+on+DVD?format=1000w");
+  background-repeat: repeat;
+  background-color: #cccccc;
+  
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #fff3ff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+h1 { color: black; font-family: 'Helvetica Neue', sans-serif; font-size: 75px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+</style>
+    <!-- Starts image section -->
+    <div class="row justify-content-md-center mb-4">
+        <h1 id="logo">
+                    RECOMMENDED MOVIES FOR YOU
+                </h1>
+    </div>
+    
+    {% if my_list %}
+    <div class="container">
+        <table class="styled-table">
+             <thead>
+              <tr>
+                
+                <th>Movie Name</th>
+                <th>Prediciton score</th>
+              </tr>
+            </thead>
+             <tbody>
+             {% for num, prediction, prob in my_list %}
+                <tr>
+                   
+                    <td>{{ prediction }}</td>
+                    <td>{{ prob }}</td>
+                </tr>
+             {% endfor %}
+             </tbody>
+       </table>
+    </div> 
+    {% endif %}
+         
+    {% if data %}
+    <div class="container">
+        <table class="styled-table">
+             <thead>
+              <tr>
+                
+                <th>Movie Name</th>
+                <th>Prediciton score</th>
+                <th>Poster</th>
+              </tr>
+            </thead>
+             <tbody>
+             {% for num, prediction, prob,link in data %}
+                <tr>
+                   
+                    <td>{{ prediction }}</td>
+                    <td>{{ prob }}</td>
+                    <td><img src={{ link }} alt="" border=3 height=400 width=300></img></td>
+                </tr>
+             {% endfor %}
+             </tbody>
+       </table>
+    </div>      
+    {% endif %}
+{% endblock %}

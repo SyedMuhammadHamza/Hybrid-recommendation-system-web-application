@@ -1,0 +1,251 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<style> 
+body {
+  background-image:linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.3)), url("https://images.squarespace-cdn.com/content/v1/55f32473e4b029b54a7228d2/1463615464165-21TSD9HGKBKMOQEWHQ7J/ke17ZwdGBToddI8pDm48kNVKaGh90e7px4cePAbZfJkUqsxRUqqbr1mOJYKfIPR7UkZTRBG6NkxChUQUS5aT-N1zvyjCMp4cr56H1as-UxdCRW4BPu10St3TBAUQYVKcMdXBcIzuK3u3cCVrFprFKYvVP-RVWEzWp1YEHmfa5vdE9hjkQRr9Ti7xR8-czToa/Rent+Rated+R+Movies+on+DVD?format=1000w");
+  background-repeat: repeat;
+  background-color: #cccccc;
+  
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #fff3ff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+header {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #0683c9;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s; }
+  header h1#logo {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    float: left;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  header nav {
+    display: inline-block;
+    float: right; }
+    header nav a {
+      line-height: 150px;
+      margin-left: 20px;
+      color: #9fdbfc;
+      font-weight: 700;
+      font-size: 18px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      header nav a:hover {
+        color: white; }
+  header.smaller {
+    height: 75px; }
+    header.smaller h1#logo {
+      width: 150px;
+      height: 75px;
+      line-height: 75px;
+      font-size: 30px; }
+    header.smaller nav a {
+      line-height: 75px; }
+
+.responsiveContainer {
+    width: 100%;
+    // Add padding top
+    padding-top: 58px;
+}
+
+.myDiv { 
+  display: none;
+  background-color:#0683c9;
+  text-align: center;
+}
+
+</style>
+    <!-- Starts image section -->
+    <div class="responsiveContainer">
+        <header>
+            <div class="container clearfix">
+                <h1 id="logo">
+                    Movie Recommender System
+                </h1>
+                <nav>
+                    <a href="https://syedmuhammadhamza.github.io/Hamza_Portfolio/">Syed Muhammad Hamza</a>
+                </nav>
+            </div>
+        </header><!-- /header -->
+    </div>
+<body>   
+    <div class="row justify-content-md-center mb-4">
+        <h4 class='text-primary'>Syed Muhammad Hamza</h3>
+    </div>
+    
+    <div class="row justify-content-md-center mb-4">
+            {% if processed_text %}
+            <p id="text">{{ processed_text1 }}</p>
+            {% endif %}
+            
+    </div> 
+    <div class="row justify-content-md-center mb-4">
+         <button align="left" class="btn btn-success" onclick="myFunction()">Double click here for instructions </button>
+    </div>
+<div id="myDIV" class="myDiv">
+  <h4 style="color:white;">Instruction</h4>
+  <p align="left" style="color:white;"><b>1)</b> Pease consider rating at least twenty different movies between 0-5 for the recommender system to generate recommendations unique to your preference </p>
+  <p align="left" style="color:white;"><b>2)</b>After rating at least twenty different movies, click predict button to generate your top recommendations</p>
+  <p align="left" style="color:white;"><b>3)</b>Click reset to repeat the cycle</p>
+  <p align="left" style="color:white;"><b>Note:</b> During EDA I noticed several movies were missing the grammatical article "The" from their titles in the dataset collected by movieLens instead of tracking those titles down and concatenating the grammatical article "The" to their titles I decided to drop grammatical article "The" for all movies, thereby please enter the movie name/title without the grammatical article "The" <br> <b>Example:</b> "Lion king" instead of The Lion King "Godfather"  instead of "The Godfather" "Shawshank Redemption" instead of "The Shawshank</p>
+
+</div>
+ 
+
+    
+<section id="cover">
+    <div id="cover-caption">
+        <div id="container" class="container">
+            <div class="row">
+                <div class="col-sm-10 offset-sm-1 text-center">
+                
+                    <div class="info-form">
+                        <form class="form-inline justify-content-center" action = "/addMovie/" method="post" >
+                            <div class="form-group">
+                                <label class="sr-only">Add Movie Name</label>
+                                <input type="text" class="form-control" id="movie_name" name="movie_name" placeholder="Add Movie Name">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="rating">Add Rating For Movie</label>
+                                <input type="text" class="form-control" id="rating" name="rating" placeholder="Add Rating For Movie">
+                            </div>
+                            <button type="submit" class="btn btn-success ">Add!</button>
+                        </form>
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   
+<div class="row justify-content-md-center mb-4">  
+                 <form class="form-horizontal" action = "/reset/" method="post">
+                    <div class="form-group row"> 
+                    <label class="control-label col-sm-2" for="">&nbsp;</label>                
+                      <div class="col-sm-offset-2 col-sm-4" style="text-align: center">
+                        <button type="submit" class="btn btn-success">Reset</button>
+                      </div>
+                    </div>
+                  </form>
+                <form class="form-horizontal" action = "/predict/" method="post">
+                    <div class="form-group row"> 
+                    <label class="control-label col-sm-2" for="">&nbsp;</label>                
+                      <div class="col-sm-offset-2 col-sm-4" style="text-align: center">
+                        <button type="submit" class="btn btn-success">Predict</button>
+                      </div>
+                    </div>
+                  </form>
+                  <form class="form-horizontal" action = "/predict_advance/" method="post">
+                    <div class="form-group row"> 
+                    <label class="control-label col-sm-2" for="">&nbsp;</label>                
+                      <div class="col-sm-offset-2 col-sm-4" style="text-align: center">
+                        <button type="submit" class="btn btn-success">Predict with additional information</button>
+                      </div>
+                    </div>
+                  </form>
+                  
+                <!-- Ends form section -->  
+            </div>
+         </div>
+</div>
+   <div class="row justify-content-md-center mb-4">
+            {% if processed_text %}
+            <h3 style="color:white;background-color:#0683c9"  id="text">{{ processed_text }}</h3>
+            {% endif %}
+            {% if movie_text %}
+            <h3 style="color:white;background-color:#0683c9" id="text">{{ movie_text }}</h3>
+            {% endif %}
+    </div> 
+<div class="row justify-content-md-center mb-4">
+        <table class="styled-table">
+             <thead>
+              <tr>
+                <th>Movies you've rated</th>
+              </tr>
+            </thead>
+             <tbody>
+             {% for movie in my_added_movies %}
+                <tr>
+                    <td>{{ movie }}</td>
+                </tr>
+             {% endfor %}
+             </tbody>
+       </table>
+</div>
+<div class="row justify-content-md-center mb-4">
+       <a class="btn btn-primary" style="background-color: #55acee;" href="https://twitter.com/bitstsunami" role="button">
+       <i class="fab fa-twitter me-2"></i>Twitter</a>
+       <!-- Linkedin -->
+       <a class="btn btn-primary" style="background-color: #0082ca;" href="https://www.linkedin.com/in/sm-hamza/" role="button">
+       <i class="fab fa-linkedin-in"></i>Linkedin</a>
+       <!-- Github -->
+       <a class="btn btn-primary" style="background-color: #333333;" href="https://github.com/SyedMuhammadHamza" role="button">
+       <i class="fab fa-github"></i>Github</a>
+</div>      
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+{% endblock %}
