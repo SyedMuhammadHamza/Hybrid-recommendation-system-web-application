@@ -62,3 +62,8 @@ project
 This Image sums it All up.
 <img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/roadmap.jpeg"/>
 
+## Setup to run on localhost
+1. Download zip or clone it using 'git clone https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application.git'
+2. Unzip the downloaded file.
+3. Run command 'pip install -r requirements.txt' to install the dependencies.
+4. Run command 'python app.py' from the directory you have stored the file.
