@@ -100,18 +100,17 @@ cd ~/Hybrid-recommendation-system-web-application
 ```
   virtualenv .
 ```
-2.2.  Activate Your Virtual Environment<br/>
-  for Linux
+3. Activate Your Virtual Environment for Linux
 ```
 source bin/activate
 ```
-2.2.  for Windows
+3. for Windows
 ```
 cd Scripts
 then
 activate
 ```
-3. Install dependencies.
+4. Install dependencies.
 ```
    pip install -r requirements.txt
 ```
