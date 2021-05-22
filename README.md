@@ -70,6 +70,20 @@ git clone https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-
 cd Hybrid-recommendation-system-web-application
 ```
 2. Create a Python 3.7 environment.
+```
+  virtualenv .
+```
+Activate Your Virtual Environment
+for Linux
+```
+source bin/activate
+```
+for Windows
+```
+cd Scripts
+then
+activate
+```
 3. Install dependencies.
 ```
    pip install -r requirements.txt
