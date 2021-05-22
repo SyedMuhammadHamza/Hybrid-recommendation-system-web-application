@@ -114,18 +114,13 @@ activate
 ```
    pip install -r requirements.txt
 ```
-4. Run following command from the directory you have stored the file
+5. Run following command from the directory you have stored the file
 ```
 python app.py
 ```
-
 ## Contributing
 Your contributions are always welcome! Contribute by opening an [issue]() or a [pull request](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application). [Guide](https://github.com/firstcontributions/first-contributions) for beginners to make their first contribution.
-## References 
-1. H. Zhang, F. Min, D. Ślęzak and B. Shi, "Cost-sensitive regression-based recommender system," 2015 International Conference on Machine Learning and Cybernetics (ICMLC), 2015, pp. 253-258, doi: 10.1109/ICMLC.2015.7340931.
-2. G. Lekakos and P. Caravelas, "A hybrid approach for movie recommendation", Multimedia tools and applications, vol. 36, no. 1–2, pp. 55-70, 2008.
-updting soon
-3. P. Cremonesi, R. Turrin and F. Airoldi, "Hybrid algorithms for recommending new items", Proceedings of the 2nd International Workshop on Information Heterogeneity and Fusion in Recommender Systems, pp. 33-40, 2011.
+
 
 ## Authors
 * [SYED MUHAMMAD HAMZA](https://syedmuhammadhamza.github.io/Hamza_Portfolio/)
@@ -135,3 +130,10 @@ Any questions can be directed to [syedmuhammadhamza.smh@gmail.com]()
 
 ## License
 ©SyedMuhammadHamza Licensed under [MIT License](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/LICENSE)
+
+## References 
+1. H. Zhang, F. Min, D. Ślęzak and B. Shi, "Cost-sensitive regression-based recommender system," 2015 International Conference on Machine Learning and Cybernetics (ICMLC), 2015, pp. 253-258, doi: 10.1109/ICMLC.2015.7340931.
+2. G. Lekakos and P. Caravelas, "A hybrid approach for movie recommendation", Multimedia tools and applications, vol. 36, no. 1–2, pp. 55-70, 2008.
+updting soon
+3. P. Cremonesi, R. Turrin and F. Airoldi, "Hybrid algorithms for recommending new items", Proceedings of the 2nd International Workshop on Information Heterogeneity and Fusion in Recommender Systems, pp. 33-40, 2011.
+
