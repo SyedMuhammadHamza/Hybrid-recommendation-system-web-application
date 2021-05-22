@@ -8,11 +8,6 @@ The Regression-based Movie Recommender system that's a hybrid of content-based a
 * [Table of contents]()
 * [Articles]()
 * [Kaggle competition]()
-* [Programming Showcase]()
-   - [Supervised Machine Learning]()
-   - [Unsupervised Machine Learning]()
-   - [Deep Learning]()
-   - [NLP]()
 * [Courses & Certificates]()
 * [Projects]()
 * [Contact]()
@@ -57,3 +52,6 @@ project
       └───requirements.txt
       └───templates
 ```
+
+## Roadmap
+
