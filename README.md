@@ -70,7 +70,7 @@ This [Dataset](https://files.grouplens.org/datasets/movielens/ml-latest.zip) of 
 ## Roadmap
 This Image sums it All up.
 <img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/roadmap.jpeg"/>
-## Roadmap Steps
+## Roadmap Step Notebooks
 * [Exploratory Data Analysis(EDA) with PostgreSQ](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Exploratory%20data%20analysis%20with%20PostgreSQL.ipynb)
 * [Feature engineering](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
 * [Model building and training](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
@@ -101,16 +101,16 @@ cd ~/Hybrid-recommendation-system-web-application
   virtualenv .
 ```
 Activate Your Virtual Environment<br/>
-      for Linux
-      ```
-      source bin/activate
-      ```
-      for Windows
-      ```
-      cd Scripts
-      then
-      activate
-      ```
+for Linux
+```
+source bin/activate
+```
+for Windows
+```
+cd Scripts
+then
+activate
+```
 3. Install dependencies.
 ```
    pip install -r requirements.txt
@@ -119,25 +119,20 @@ Activate Your Virtual Environment<br/>
 ```
 python app.py
 ```
-## Notebooks and Files
-* [Exploratory data analysis with PostgreSQ](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Exploratory%20data%20analysis%20with%20PostgreSQL.ipynb)
-* [Hybrid recommendation algorithm and evaluation](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
-* [PostgreSQL_Database_wrapper](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/PostgreSQL_Database_wrapper.py)
-* [Flask server files](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/tree/main/Server)
 
+## Contributing
+Your contributions are always welcome! Contribute by opening an [issue]() or a [pull request](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application). [Guide](https://github.com/firstcontributions/first-contributions) for beginners to make their first contribution.
 ## References 
 1. H. Zhang, F. Min, D. Ślęzak and B. Shi, "Cost-sensitive regression-based recommender system," 2015 International Conference on Machine Learning and Cybernetics (ICMLC), 2015, pp. 253-258, doi: 10.1109/ICMLC.2015.7340931.
 2. G. Lekakos and P. Caravelas, "A hybrid approach for movie recommendation", Multimedia tools and applications, vol. 36, no. 1–2, pp. 55-70, 2008.
 updting soon
 3. P. Cremonesi, R. Turrin and F. Airoldi, "Hybrid algorithms for recommending new items", Proceedings of the 2nd International Workshop on Information Heterogeneity and Fusion in Recommender Systems, pp. 33-40, 2011.
 
-## Contributing
-Contribute by opening an [issue]() or a [pull request](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application). [Guide](https://github.com/firstcontributions/first-contributions) for beginners to make their first contribution.
-
 ## Authors
-[SYED MUHAMMAD HAMZA](https://syedmuhammadhamza.github.io/Hamza_Portfolio/)
+* [SYED MUHAMMAD HAMZA](https://syedmuhammadhamza.github.io/Hamza_Portfolio/)
 
 ## Contact
 Any questions can be directed to [syedmuhammadhamza.smh@gmail.com]()
 
+## License
 ©SyedMuhammadHamza Licensed under [MIT License](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/LICENSE)
