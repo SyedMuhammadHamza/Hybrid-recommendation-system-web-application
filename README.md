@@ -70,14 +70,16 @@ This [Dataset](https://files.grouplens.org/datasets/movielens/ml-latest.zip) of 
 ## Roadmap
 This Image sums it All up.
 <img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/roadmap.jpeg"/>
+## Roadmap Steps
+* [Exploratory Data Analysis(EDA) with PostgreSQ](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Exploratory%20data%20analysis%20with%20PostgreSQL.ipynb)
+* [Feature engineering](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
+* [Model building and training](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
+* [Model Evaluation](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
+* [Deployment](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Server/app.py)
 
-## Exploratory Data Analysis(EDA) with PostgreSQ
-In this part of the project, I've performed Exploratory data analysis with PostgreSQL.The idea to use PostgreSQL for EDA gives you a sense of how the relational database works, how data in it is stored, and more importantly how to get data out of the database. SQL is a very flexible declarative language and can be used to pose a rich set of queries to get data out of the database even tho it's not Turing complete but its ability to perform data manipulation is exceptional and makes it a great companion to have during EDA I'm going to use SQL queries for data manipulation for almost every single graphical EDA technique today along with some other python libraries mainly for visualization
-[NOTEBOOK](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Exploratory%20data%20analysis%20with%20PostgreSQL.ipynb)
 
 ## About Hybrid Algorithm 
-[NOTEBOOK](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
-The hybrid recommendation system consists of the following sequence of steps 
+The hybrid recommendation system consists of the following sequence of steps [NOTEBOOK](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
 ### Step 1. Collaborative filtering
 The main objective of collaborative filtering at this step is to learn features for different movies. The implementation of Collaborative filtering here performs "Feature learning" Using a variation of multivariate regression with gradient descent as an optimization algorithm, it takes as input user-item interaction matrix and simultaneously learns both the parameters for different users and features for different movies 
 
@@ -86,10 +88,6 @@ The content-based filtering here again is going to be an extension of multivaria
 
 ### Step 3. Prediction
 Prediction (uses both the Features for movies learned using collaborative filtering and the Parameters unique to user learned using content-based filtering to recommend top-N recommendation) The prediction uses both the vectors for movies learned using collaborative filtering and the parameter unique to user learned using content-based filtering to recommend top-N recommendation
-
-## Model Evaluation
-For the evaluation, I've used MSE for learning curve analysis on test and train sets
-[NOTEBOOK](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
 
 ## Usage
 Setup to run on localhost<br/>
