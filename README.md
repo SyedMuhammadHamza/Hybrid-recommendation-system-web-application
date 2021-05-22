@@ -91,7 +91,7 @@ Prediction (uses both the Features for movies learned using collaborative filter
 
 ## Usage
 Setup to run on localhost<br/>
-1.Clone the repository
+1. Clone the repository
 ```
 git clone https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application.git
 cd ~/Hybrid-recommendation-system-web-application
