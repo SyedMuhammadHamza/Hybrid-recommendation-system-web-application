@@ -100,12 +100,12 @@ cd ~/Hybrid-recommendation-system-web-application
 ```
   virtualenv .
 ```
-  Activate Your Virtual Environment<br/>
+2.2.  Activate Your Virtual Environment<br/>
   for Linux
 ```
 source bin/activate
 ```
-  for Windows
+2.2.  for Windows
 ```
 cd Scripts
 then
