@@ -20,11 +20,12 @@ The Regression-based Movie Recommender system that's a hybrid of content-based a
 
 ## Prerequisites
 The following open source packages are used in this project:
-*Numpy
-*Pandas
-*Matplotlib
-*Flask
+* Numpy
+* Pandas
+* Matplotlib
+* Flask
 
+## Project Structure 
 ```
 project
 │   README.md
