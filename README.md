@@ -28,6 +28,11 @@ project
 └───Data
 │   │   Data_README.txt
 │
+└───Images
+|   |   img1.png
+|   |   img1.png
+|   |   ...
+|
 └───Model
 │   │   Exploratory data analysis with PostgreSQL.ipynb
 │   │   Hybrid recommendation algorithm.ipynb
@@ -54,4 +59,6 @@ project
 ```
 
 ## Roadmap
+This Image sums it All up.
+<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/roadmap.jpeg"/>
 
