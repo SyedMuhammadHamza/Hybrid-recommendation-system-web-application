@@ -1,6 +1,6 @@
-# Hybrid-recommendation-system-web-application
+# Hybrid Recommendation System
+The Regression-based Movie Recommender system that's a hybrid of content-based and collaborative filtering approaches. Simply rate some movies and get immediate recommendations tailored for you
 
-## Prerequisites
 
 ## Table of contents
 
@@ -28,18 +28,31 @@ The following open source packages are used in this project:
 ```
 project
 │   README.md
-│   file001.txt    
+│    
+└───Data
+│   │   Data_README.txt
 │
-└───folder1
-│   │   file011.txt
-│   │   file012.txt
+└───Model
+│   │   Exploratory data analysis with PostgreSQL.ipynb
+│   │   Hybrid recommendation algorithm.ipynb
+│   │   PostgreSQL_Database_wrapper.py
+│   │   Movies_Datase.pkl
+│   │   Movies_Learned_Features.pkl
 │   │
-│   └───subfolder1
-│       │   file111.txt
-│       │   file112.txt
+│   └───images
+│       │   img1.png
+│       │   img2.png
 │       │   ...
 │   
-└───folder2
-    │   file021.txt
-    │   file022.txt
+└───Server
+      │   README.txt
+      └───templates
+      │     │    home.html
+      │     │    layout.html
+      │     │    result.html
+      └───app.py
+      └───Movies_Datase.pkl
+      └───Movies_Learned_Features.pkl
+      └───requirements.txt
+      └───templates
 ```
