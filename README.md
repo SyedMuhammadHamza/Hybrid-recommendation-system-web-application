@@ -74,4 +74,7 @@ cd Hybrid-recommendation-system-web-application
 ```
    pip install -r requirements.txt
 ```
-4. Run command 'python app.py' from the directory you have stored the file.
+4. Run following command from the directory you have stored the file
+```
+python app.py
+```
