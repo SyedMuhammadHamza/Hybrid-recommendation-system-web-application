@@ -1,4 +1,5 @@
 # Hybrid Recommendation System
+<img alt="GitHub" src="https://img.shields.io/github/license/SyedMuhammadHamza/Hybrid-recommendation-system-web-application">
 The Regression-based Movie Recommender system that's a hybrid of content-based and collaborative filtering approaches. Simply rate some movies and get immediate recommendations tailored for you
 
 
