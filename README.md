@@ -96,7 +96,7 @@ This Image sums it All up.
 The hybrid recommendation system consists of the following sequence of steps [NOTEBOOK](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
 ### Step 1. Collaborative filtering
 The main objective of collaborative filtering at this step is to learn features for different movies. The implementation of Collaborative filtering here performs "Feature learning" Using a variation of multivariate regression with gradient descent as an optimization algorithm, it takes as input user-item interaction matrix and simultaneously learns both the parameters for different users and features for different movies 
-<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/step1.jpg" width="600" height="300"/>
+<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/step1.jpg" width="600" height="400"/>
 
 ### Step 2. Content-based filtering
 The content-based filtering here again is going to be an extension of multivariate regression but unlike collaborative filtering here I'm going to use the features for movies learned using collaborative filtering now to learn online web-application user parameter using content-based filtering thats unique to the user based on his/her web application movie ratings.
