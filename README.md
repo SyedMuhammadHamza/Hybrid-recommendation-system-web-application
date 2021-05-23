@@ -22,7 +22,8 @@ The Regression-based Movie Recommender system that's a hybrid of content-based a
 * [References](##References)
 
 ## Demo
-<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/Animation.gif" width="300" height="120"/>
+<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/Animation.gif" width="500" height="220"/>
+
 ## Live Applicaiton
 * [Deployed live application here](https://smhxrecommendersystemapp.herokuapp.com/)
 
