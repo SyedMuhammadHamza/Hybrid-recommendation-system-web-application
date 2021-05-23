@@ -1,6 +1,7 @@
 # Hybrid Recommendation System
 <img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/web.jpg" width="700" height="280"/>
-<img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fsmhxrecommendersystemapp.herokuapp.com%2F"> <img alt="GitHub" src="https://img.shields.io/github/license/SyedMuhammadHamza/Hybrid-recommendation-system-web-application"> <img alt="Website" src="https://img.shields.io/badge/Powered%20by-Heroku%20-%236567a5"> <img alt="GitHub" src="https://img.shields.io/badge/contributions-welcome-brightgreen"> 
+
+<img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fsmhxrecommendersystemapp.herokuapp.com%2F"><img alt="GitHub" src="https://img.shields.io/github/license/SyedMuhammadHamza/Hybrid-recommendation-system-web-application"><img alt="Website" src="https://img.shields.io/badge/Powered%20by-Heroku%20-%236567a5"><img alt="GitHub" src="https://img.shields.io/badge/contributions-welcome-brightgreen"> 
 
 The Regression-based Movie Recommender system that's a hybrid of content-based and collaborative filtering approaches. Simply rate some movies and get immediate recommendations tailored for you
 
@@ -21,7 +22,7 @@ The Regression-based Movie Recommender system that's a hybrid of content-based a
 * [References](##References)
 
 ## Demo
-<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/Animation.gif"/>
+<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/Animation.gif" width="300" height="120"/>
 ## Live Applicaiton
 * [Deployed live application here](https://smhxrecommendersystemapp.herokuapp.com/)
 
