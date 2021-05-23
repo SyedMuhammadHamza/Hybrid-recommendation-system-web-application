@@ -1,18 +1,18 @@
 # Hybrid Recommendation System
-<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/Animation.gif" width="900" height="500"/>
+<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/Animation.gif" width="700" height="230"/>
 <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fsmhxrecommendersystemapp.herokuapp.com%2F" align="center"> <img alt="GitHub" src="https://img.shields.io/github/license/SyedMuhammadHamza/Hybrid-recommendation-system-web-application" align="center"> <img alt="Website" src="https://img.shields.io/badge/Powered%20by-Heroku%20-%236567a5" align="center"> <img alt="GitHub" src="https://img.shields.io/badge/contributions-welcome-brightgreen" align="center"> 
 
 The Regression-based Movie Recommender system that's a hybrid of content-based and collaborative filtering approaches. Simply rate some movies and get immediate recommendations tailored for you
 
 ## Table of contents
-* [Live Applicaiton](##Live Applicaiton)
+* [Live Applicaiton](https://smhxrecommendersystemapp.herokuapp.com/)
 * [Prerequisites](##Prerequisites)
-* [Project Structure](##Project Structure)
+* [Project Structure](##ProjectStructure)
 * [Dataset](##Dataset)
 * [Roadmap](##Roadmap)
-* [Roadmap Step Notebooks](##Roadmap Step Notebooks)
-* [About Hybrid Algorithm](##About Hybrid Algorithm)
-* [Usage](## Usage)
+* [Roadmap Step Notebooks](##RoadmapStepNotebooks)
+* [About Hybrid Algorithm](##AboutHybridAlgorithm)
+* [Usage](##Usage)
 * [Contributing](##Contributing)
 * [Authors](##Authors)
 * [Contact](##Contact)
