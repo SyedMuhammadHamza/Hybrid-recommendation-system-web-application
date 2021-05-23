@@ -1,5 +1,4 @@
 # Hybrid Recommendation System
-![Alt Text](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/Animation.gif)
 <img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fsmhxrecommendersystemapp.herokuapp.com%2F" align="center"> <img alt="GitHub" src="https://img.shields.io/github/license/SyedMuhammadHamza/Hybrid-recommendation-system-web-application" align="center"> <img alt="Website" src="https://img.shields.io/badge/Powered%20by-Heroku%20-%236567a5" align="center"> <img alt="GitHub" src="https://img.shields.io/badge/contributions-welcome-brightgreen" align="center"> 
 
 The Regression-based Movie Recommender system that's a hybrid of content-based and collaborative filtering approaches. Simply rate some movies and get immediate recommendations tailored for you
