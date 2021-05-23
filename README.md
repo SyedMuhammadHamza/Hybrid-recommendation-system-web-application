@@ -7,20 +7,22 @@
 The Regression-based Movie Recommender system that's a hybrid of content-based and collaborative filtering Recommender system. Simply rate some movies and get immediate recommendations tailored for you
 
 ## Table of contents
-* [Demo](##Demo)
-* [Live Applicaiton](https://smhxrecommendersystemapp.herokuapp.com/)
-* [Prerequisites](##Prerequisites)
-* [Project Structure](##ProjectStructure)
-* [Dataset](##Dataset)
-* [Roadmap](##Roadmap)
-* [Roadmap Step Notebooks](##RoadmapStepNotebooks)
-* [About Hybrid Algorithm](##AboutHybridAlgorithm)
-* [Usage](##Usage)
-* [Contributing](##Contributing)
-* [Authors](##Authors)
-* [Contact](##Contact)
-* [License](##License)
-* [References](##References)
+- [Demo](#demo)
+- [Live Applicaiton](#live-applicaiton)
+- [Prerequisites](#prerequisites)
+- [Project Structure](#project-structure)
+- [Dataset](#dataset)
+- [Roadmap](#roadmap)
+- [Roadmap Step Notebooks](#roadmap-step-notebooks)
+- [About Hybrid Algorithm](#about-hybrid-algorithm)
+  * [Step 1. Collaborative filtering](#step-1-collaborative-filtering)
+  * [Step 2. Content-based filtering](#step-2-content-based-filtering)
+  * [Step 3. Prediction](#step-3-prediction)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [License](#license)
+- [References](#references)
 
 ## Demo
 <img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/Animation.gif" width="500" height="220"/>
