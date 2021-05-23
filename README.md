@@ -77,8 +77,9 @@ project
 The dataset is provided by GroupLens and can be downloaded from here it contains the following files(links.csv, movies.csv, ratings.csv, and tags.csv)
 
 > "This dataset (ml-latest-small) describes 5-star rating and free-text tagging activity from MovieLens, a movie recommendation service. It contains 100836 ratings and      3683 tag applications across 9742 movies. These data were created by 610 users between March 29, 1996, and September 24, 2018. This dataset was generated on September    26, 2018."
-This [Dataset](https://files.grouplens.org/datasets/movielens/ml-latest-small.zip) of 1 MB is the one used in all Notebooks 
-This [Dataset](https://files.grouplens.org/datasets/movielens/ml-latest.zip) of 265 MB is the one used for training deployed model. 
+
+* This [Dataset](https://files.grouplens.org/datasets/movielens/ml-latest-small.zip) of 1 MB is the one used in all Notebooks 
+* This [Dataset](https://files.grouplens.org/datasets/movielens/ml-latest.zip) of 265 MB is the one used for training deployed model. 
 
 ## Roadmap
 This Image sums it All up.
@@ -95,12 +96,17 @@ This Image sums it All up.
 The hybrid recommendation system consists of the following sequence of steps [NOTEBOOK](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Model/Hybrid%20recommendation%20algorithm.ipynb)
 ### Step 1. Collaborative filtering
 The main objective of collaborative filtering at this step is to learn features for different movies. The implementation of Collaborative filtering here performs "Feature learning" Using a variation of multivariate regression with gradient descent as an optimization algorithm, it takes as input user-item interaction matrix and simultaneously learns both the parameters for different users and features for different movies 
+<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/step1.jpg" width="600" height="300"/>
 
 ### Step 2. Content-based filtering
 The content-based filtering here again is going to be an extension of multivariate regression but unlike collaborative filtering here I'm going to use the features for movies learned using collaborative filtering now to learn online web-application user parameter using content-based filtering thats unique to the user based on his/her web application movie ratings.
 
+<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/step2.jpg" width="600" height="300"/>
+
 ### Step 3. Prediction
 Prediction (uses both the Features for movies learned using collaborative filtering and the Parameters unique to user learned using content-based filtering to recommend top-N recommendation) The prediction uses both the vectors for movies learned using collaborative filtering and the parameter unique to user learned using content-based filtering to recommend top-N recommendation
+
+<img src="https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/Images/step3.jpg" width="600" height="300"/>
 
 ## Usage
 Setup to run on localhost<br/>
@@ -134,12 +140,8 @@ python app.py
 ## Contributing
 Your contributions are always welcome! Contribute by opening an [issue]() or a [pull request](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application). [Guide](https://github.com/firstcontributions/first-contributions) for beginners to make their first contribution.
 
-
-## Authors
-* [SYED MUHAMMAD HAMZA](https://syedmuhammadhamza.github.io/Hamza_Portfolio/)
-
 ## Contact
-Any questions can be directed to [syedmuhammadhamza.smh@gmail.com]()
+Any questions can be directed to [syedmuhammadhamza.smh@gmail.com](https://syedmuhammadhamza.github.io/Hamza_Portfolio/)
 
 ## License
 ©SyedMuhammadHamza Licensed under [MIT License](https://github.com/SyedMuhammadHamza/Hybrid-recommendation-system-web-application/blob/main/LICENSE)
@@ -150,6 +152,4 @@ Any questions can be directed to [syedmuhammadhamza.smh@gmail.com]()
 [2]. [G. Lekakos and P. Caravelas, "A hybrid approach for movie recommendation", Multimedia tools and applications, vol. 36, no. 1–2, pp. 55-70, 2008.
 updting soon]()
 <br/>
-
 [3]. [P. Cremonesi, R. Turrin and F. Airoldi, "Hybrid algorithms for recommending new items", Proceedings of the 2nd International Workshop on Information Heterogeneity and Fusion in Recommender Systems, pp. 33-40, 2011.](https://dl.acm.org/doi/10.1145/2039320.2039325)
-
