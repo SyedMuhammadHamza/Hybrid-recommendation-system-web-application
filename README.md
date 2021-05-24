@@ -9,6 +9,7 @@ The Regression-based Movie Recommender system that's a hybrid of content-based a
 ## Table of contents
 - [Demo](#demo)
 - [Live Applicaiton](#live-applicaiton)
+- [Accompanying Medium articles](#Accompanying-Medium-articles)
 - [Prerequisites](#prerequisites)
 - [Project Structure](#project-structure)
 - [Dataset](#dataset)
@@ -29,6 +30,9 @@ The Regression-based Movie Recommender system that's a hybrid of content-based a
 
 ## Live Applicaiton
 * [Deployed live application here](https://smhxrecommendersystemapp.herokuapp.com/)
+
+## Accompanying Medium articles
+* [Hybrid Recommendation System Web-Application Part 1: Exploratory Data Analysis with PostgreSQL](https://medium.com/@syedmuhammadhamza_23687/hybrid-recommendation-system-web-application-part-1-exploratory-data-analysis-with-postgresql-642ed890c06b)
 
 ## Prerequisites
 The following open source packages are used in this project:
